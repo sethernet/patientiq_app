@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  salary: 2000
+  bonus: 10
+  employee_id: 1
+
+two:
+  salary: 5000
+  bonus: 20
+  employee_id: 1

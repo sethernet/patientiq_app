@@ -1,0 +1,15 @@
+<table border="2">
+  <tr>
+    <th>Department</th>
+    <th>Name</th>
+    <th>Top Salaries</th>
+  </tr>
+<% @summary.each do |summary| %>
+  <tr style="border: solid 1px black;">
+    <td><%= summary.fetch('department_name') %></td>
+    <td><%= summary.fetch('employee_name') %></td>
+    <td><%= summary.fetch('salary') %></td>
+  </tr>
+<% end %>
+
+</table>

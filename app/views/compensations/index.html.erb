@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Compensation</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Salary</th>
+      <th>Bonus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+    <td><%= @compensation.salary %></td>
+    <td><%= @compensation.bonus %></td>
+
+    <td><%= link_to 'Show', employee_compensation_path(@employee, @compensation) %></td>
+    <td><%= link_to 'Edit', edit_employee_compensation_path(@employee, @compensation) %></td>
+    <td><%= link_to 'Destroy', [@employee, @compensation], confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Compensation', new_employee_compensation_path(@employee) %>
+

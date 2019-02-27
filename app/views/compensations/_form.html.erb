@@ -1,0 +1,28 @@
+<%= form_for([@employee, @compensation]) do |form| %>
+
+    <% if compensation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(compensation.errors.count, "error") %> prohibited this compensation from being saved:</h2>
+
+      <ul>
+      <% compensation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :salary %>
+    <%= form.text_field :salary %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bonus %>
+    <%= form.text_field :bonus %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

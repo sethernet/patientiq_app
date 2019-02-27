@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: Fake Company
+  subdomain: fakeco
+
+two:
+  id: 2
+  name: Public
+  subdomain: www

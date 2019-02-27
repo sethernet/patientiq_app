@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @compensation.salary %>
+</p>
+
+<p>
+  <strong>Bonus:</strong>
+  <%= @compensation.bonus %>
+</p>
+
+<%= link_to 'Edit', edit_employee_compensation_path(@employee, @compensation) %> |
+<%= link_to 'Back', @employee %>
